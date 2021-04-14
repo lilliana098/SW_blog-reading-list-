@@ -9,7 +9,7 @@ export const Card = props => {
 	const local = props.content;
 	const isFavorite = store.favorites.includes(local.name);
 	return (
-		<Col className="mt-2">
+		<Col className="d-flex justify-content-between">
 			<div className="card" style={{ width: "15rem" }}>
 				<img
 					className="card-img-top"

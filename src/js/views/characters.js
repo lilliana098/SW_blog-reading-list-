@@ -9,11 +9,11 @@ const Characters = props => {
 	let character = store.peopleList[params.theid - 1];
 
 	return (
-		<div className="container text-center w-75">
+		<div className="container text-center w-75" style={{ color: "white" }}>
 			<div className="row no-gutters p-3">
 				<div className="col-md-6">
 					<img
-						src="https://fueradefoco.com.mx/wp-content/uploads/2020/05/Star-Wars.jpg"
+						src="https://www.rockandpop.cl/wp-content/uploads/2020/11/1d9c8486ccb4519d85cd5ee92ea77ef5.jpg"
 						className="card-img"
 						alt="..."
 						style={{ width: "300px" }}
@@ -33,7 +33,7 @@ const Characters = props => {
 					</div>
 				</div>
 			</div>
-			<div className="row border-danger border-top p-3 text-danger">
+			<div className="row border-danger border-top p-3 text-danger" style={{ background: "#c4b3b5" }}>
 				<div className="col">
 					<p>Name</p>
 					<p>{character.name}</p>
@@ -61,7 +61,7 @@ const Characters = props => {
 			</div>
 			<div className="d-flex justify-content-start">
 				<Link to="/">
-					<div className="btn btn-outline-primary">Back to home</div>
+					<div className="btn btn-outline-primary">Home</div>
 				</Link>
 			</div>
 		</div>
